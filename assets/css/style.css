@@ -1,7 +1,7 @@
 :root {
-  --main-bg-color: darkolivegreen;
+  --main-bg-color: #232323;
   --text-color: blanchedalmond;
-  --second-bg-color: hsl(263, 52%, 63%);
+  --second-bg-color: hsl(138, 66%, 8%);
 }
 
 * {
@@ -15,7 +15,7 @@ body {
 
 header {
   padding: 10px;
-  text-align: center;
+  text-align: start;
   background: var(--main-bg-color);
   color: var(--text-color);
 }
@@ -42,6 +42,12 @@ aside {
   text-align: center;
 }
 
+aside img {
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 8px;
+}
+
 div img {
   height: 10em;
   width: 100%;
@@ -55,11 +61,21 @@ div img {
   text-align: center;
 }
 
+h3 {
+  background-color: var(--second-bg-color);
+}
+
+#larger-project {
+  max-width: 100%;
+}
+
 .card {
-  border-style: double;
+  max-width: 50%;
+  border-style: solid;
   border-width: 4px;
   border-radius: 10px;
   padding: 10px;
+  display: inline-block;
 }
 
 footer {
