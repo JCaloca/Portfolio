@@ -13,21 +13,20 @@ body {
 }
 
 header {
-  padding: 0;
-  text-align: start;
+  padding: 10px;
+  text-align: center;
   background: var(--main-bg-color);
   color: var(--text-color);
 }
 
 nav {
-  display: flex;
   background-color: var(--main-bg-color);
+  text-align: right;
 }
 
 nav a {
   color: var(--text-color);
   padding: 15px 20px;
-  text-align: end;
 }
 
 main {
