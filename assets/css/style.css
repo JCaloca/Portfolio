@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: darkolivegreen;
   --text-color: blanchedalmond;
+  --second-bg-color: hsl(263, 52%, 63%);
 }
 
 * {
@@ -66,4 +67,18 @@ footer {
   text-align: center;
   background-color: var(--main-bg-color);
   color: var(--text-color);
+}
+
+@media screen and (max-width: 936px) {
+  main,
+  div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  div {
+    flex-direction: column;
+  }
 }
