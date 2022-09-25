@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: darkolivegreen;
+  --text-color: blanchedalmond;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,13 +12,54 @@ body {
 }
 
 header {
-  padding: 1em;
-  text-align: start;
-  background: darkolivegreen;
-  color: blanchedalmond;
+  padding: 0;
+  text-align: end;
+  background: var(--main-bg-color);
+  color: var(--text-color);
 }
 
 nav {
-  justify-content: flex-end;
-  display: inline-block;
+  display: flex;
+  background-color: var(--main-bg-color);
+}
+
+nav a {
+  color: var(--text-color);
+  padding: 15px 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: ;
+  padding: 80px;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.projects {
+  flex: 4;
+  background-color: mintcream;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border-style: groove;
+  border-width: 4px;
+  border-radius: 10px;
+  padding: 10px;
 }
