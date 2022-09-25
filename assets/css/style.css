@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #232323;
   --text-color: blanchedalmond;
-  --second-bg-color: hsl(138, 66%, 8%);
+  --second-bg-color: #fff;
 }
 
 * {
@@ -36,15 +36,17 @@ main {
 }
 
 aside {
+  max-width: 25%;
   flex: 4;
-  background-color: ;
+  background-color: var(--main-bg-color)
   padding: 80px;
   text-align: center;
 }
 
 aside img {
-  max-width: 25%;
-  max-height: 25%;
+  width: 25%;
+  max-width: 200px;
+  min-width: 100px;
   border-radius: 8px;
 }
 
@@ -55,7 +57,7 @@ div img {
 
 .projects {
   flex: 4;
-  background-color: mintcream;
+  background-color: white;
   padding: 20px;
   justify-content: center;
   text-align: center;
@@ -96,5 +98,8 @@ footer {
   main,
   div {
     flex-direction: column;
+  }
+  aside {
+    flex: 4;
   }
 }
