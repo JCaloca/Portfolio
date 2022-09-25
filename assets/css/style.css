@@ -9,11 +9,12 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-wrap: wrap;
 }
 
 header {
   padding: 0;
-  text-align: end;
+  text-align: start;
   background: var(--main-bg-color);
   color: var(--text-color);
 }
@@ -26,7 +27,7 @@ nav {
 nav a {
   color: var(--text-color);
   padding: 15px 20px;
-  text-align: center;
+  text-align: end;
 }
 
 main {
@@ -35,25 +36,21 @@ main {
 }
 
 aside {
-  flex: 1;
+  flex: 4;
   background-color: ;
   padding: 80px;
   text-align: center;
 }
 
-footer {
-  padding: 20px;
-  text-align: center;
-  background-color: var(--main-bg-color);
-  color: var(--text-color);
+div img {
+  height: 10em;
+  width: 100%;
 }
 
 .projects {
   flex: 4;
   background-color: mintcream;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
@@ -63,5 +60,11 @@ footer {
   border-width: 4px;
   border-radius: 10px;
   padding: 10px;
+}
+
+footer {
+  padding: 20px;
   text-align: center;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
 }
