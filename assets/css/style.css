@@ -30,6 +30,10 @@ nav a {
   padding: 15px 20px;
 }
 
+a {
+  color: var(--text-color);
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -41,6 +45,7 @@ aside {
   background-color: var(--main-bg-color)
   padding: 80px;
   text-align: center;
+  
 }
 
 aside img {
@@ -52,7 +57,7 @@ aside img {
 
 div img {
   height: 10em;
-  width: 100%;
+  width: 90%;
 }
 
 .projects {
@@ -63,24 +68,30 @@ div img {
   text-align: center;
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 h3 {
-  text-decoration: dotted;
+  text-decoration: underline;
   color: var(--text-color);
 }
 
-#larger-project {
-  max-width: 100%;
-}
-
 .card {
-  max-width: 50%;
+  max-width: 25%;
+  min-width: 25%;
   margin: 25px 5px 25px 5px;
   border-style: solid;
   border-width: 4px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   display: inline-block;
   background-color: var(--main-bg-color)
+}
+
+
+#larger-project {
+  max-width: 100%;
 }
 
 footer {
@@ -90,10 +101,18 @@ footer {
   color: var(--text-color);
 }
 
-@media screen and (max-width: 936px) {
+@media screen and (max-width: 1200px) {
+  main,aside,
+  div {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 992px) {
   main,
   div {
     flex-direction: column;
+    min-width: 25%;
   }
 }
 
@@ -104,5 +123,6 @@ footer {
   }
   aside {
     flex: 4;
+    flex-direction: column;
   }
 }
