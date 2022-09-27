@@ -6,8 +6,8 @@ Hello! Welcome to my Portfolio Project. I created this page to showcase some of 
 
 ## Usage
 
-<img src="C:\Users\jacob\OneDrive\desktop\homework\Portfolio\assets\images\Screenshot-Portfolio.png">
-The page I have created allows you to get into contact with me if you are interested in a professional collaboration. 
+![My Image](../images/Screenshot-Portfolio.png)
+The page I have created allows you to get into contact with me if you are interested in a professional collaboration.
 Check it out!
 
 ## Credits
